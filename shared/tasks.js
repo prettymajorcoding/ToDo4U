@@ -1,4 +1,4 @@
-export const AGENDAS = [
+export const TASKS = [
     {
         id: 0,
         name: "Grocery shopping",

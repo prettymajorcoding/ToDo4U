@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import Agendas from './Agendas';
-import { AGENDAS } from '../shared/agendas';
+import { TASKS } from '../shared/tasks';
+import AddTask from './AddTask';
+import TasksListComponent from './TasksListComponent';
 
 class Home extends Component {
 
@@ -12,13 +12,16 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            agendas: AGENDAS
+            tasks: TASKS
         };
     }
 
     render() {
         return (
-            <Agendas agendas={this.state.agendas}/>
+            <>
+                {/* <TasksListComponent tasks={this.state.tasks}/> */}
+                <AddTask />
+            </>
         )
     }
 }
